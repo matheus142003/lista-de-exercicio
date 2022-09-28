@@ -1,1 +1,36 @@
+  int main(){
+  int vetint[4] ;
+  int i;
+  for(i=0;i<3;i++){
+  printf("\n%X ",vetint+i);}
+  printf("\n");
+  //R:FF2D4C40|FF2D4C44|FF2D4C48 
+  
+  char vetchar[4] ;
+  char j;
+  for(j=0;j<3;j++){
+  printf("\n%X ",vetchar+j);}
+  //R:FF2D4C3C|FF2D4C3D|FF2D4C3E
+  
+  printf("\n");
+  float vetfloat[4] ;
+  int k;
+  for(k=0;k<3;k++){
+  printf("\n%X ",vetfloat+k);}
+  //R:FF2D4C20|FF2D4C24|FF2D4C28 
+  
+  printf("\n");
+  double vetdouble[4] ;
+  int l;
+  for(l=0;l<3;l++){
+  printf("\n%X ",vetdouble+l);}}
+  //R:FF2D4C00|FF2D4C08|FF2D4C10
+  
 
+
+
+
+
+
+
+}
