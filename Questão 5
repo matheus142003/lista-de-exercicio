@@ -1,1 +1,27 @@
+  printf("vet[%d] = %.1f",i, vet[i]);
+  0vet[0] = 1.1
+  1vet[1] = 2.2
+  2vet[2] = 3.3
+  3vet[3] = 4.4
+  4vet[4] = 5.5
 
+  printf("*(f + %d) = %.1f",i, *(f+i));
+  *(f + 0) = 1.1
+  *(f + 1) = 2.2
+  *(f + 2) = 3.3
+  *(f + 3) = 4.4
+  *(f + 4) = 5.5
+  
+  printf("&vet[%d] = %X",i, &vet[i]);
+  &vet[0] = B66D8EE0
+  &vet[1] = B66D8EE4
+  &vet[2] = B66D8EE8
+  &vet[3] = B66D8EEC
+  &vet[4] = B66D8EF0
+  
+  printf("(f + %d) = %X",i, f+i);
+  (f + 0) = B66D8EE0
+  (f + 1) = B66D8EE4
+  (f + 2) = B66D8EE8
+  (f + 3) = B66D8EEC
+  (f + 4) = B66D8EF0
