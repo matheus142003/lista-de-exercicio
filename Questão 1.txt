@@ -1,4 +1,3 @@
-
  p == &i;
  R: 1 ou true
  *p - *q;
