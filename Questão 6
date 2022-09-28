@@ -1,1 +1,2 @@
+int pulo[] o terceiro elemento do vetor vai ser repesentado pela expressão:*(pulo + 2);
 
