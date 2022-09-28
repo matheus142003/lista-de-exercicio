@@ -1,1 +1,14 @@
-
+  int vet[] = {4,9,13};
+  int i;
+  for(i=0;i<3;i++){
+  printf("%d ",*(vet+i));}
+  R: 4 9 13 responde os valores dentro do array.
+ 
+  int vet[] = {4,9,13};
+  int i;
+  for(i=0;i<3;i++){
+  printf("%X ",vet+i);}
+  R:73849630 73849634 73849638 responde com os valores do endereço de memória.
+  
+  
+  
