@@ -1,1 +1,12 @@
+Expressões de atribuição são legais
+q = &j
+p = &*&i
+i = *&j
+i = *&*&j
+i = (*p)++ + *q
+
+Expressões de atribuição são legais
+p = i
+i = (*&)j
+q = *p
 
