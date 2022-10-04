@@ -25,12 +25,4 @@
   for(l=0;l<3;l++){
   printf("\n%X ",vetdouble+l);}}
   //R:FF2D4C00|FF2D4C08|FF2D4C10
-  
-
-
-
-
-
-
-
 }
