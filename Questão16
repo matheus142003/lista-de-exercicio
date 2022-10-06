@@ -1,1 +1,54 @@
 
+
+
+
+================================================= questão 14 ==============================================================
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>      
+#include <unistd.h> 
+
+void  ordenar_elementos(float * elementos, int size) { // função para o usuário digitar elementos ao usuário
+  printf("\n");
+  for (int i = 0; i < size; i++) {
+    printf("Digite o valor do elemento %i°: ", i+1); 
+    scanf("%f", &elementos[i]); // pedindo valor para armazenar no array de elementos
+  }
+}
+void imprim_elementos(float *elementos, int size){ 
+  // função para imprimir os elemento da array float
+  printf("\n|");
+  for (int i = 0; i < size; i++) {
+    if(i < size-1){ // if para separa cada float
+      printf("%.2f|", elementos[i]);
+    }else{
+      printf("%.2f|\n", elementos[i]);
+    }
+  }
+}
+int compare_elementos(const void * a, const void *b){ // função para comparar dois elemento e decidir se troca as variaveis de posição
+  return (*(int*)a - *(int*)b);
+}
+int main() { // função principal
+  float * elementos; // um ponteiro para float
+  int size; // declarar um inteiro para o tamanho do vetor
+  double time_spent = 0.0;
+
+   clock_t begin = clock();
+  printf("\nQuantos elementos deseja ordenar? ");
+  scanf("%d", &size); //a quantidade de elementos que o usuario deseja
+
+  elementos = malloc(size * sizeof(float)); // alocamos espaço na memoria
+
+   ordenar_elementos(elementos, size); // utilizando os elementos e armazenamos no array de elementos
+ printf("\n");
+  qsort(elementos, size, sizeof(float), compare_elementos); // ordenamos o array utilizando o qsort
+  printf("Elementos em ordem crescente : ");
+  imprim_elementos(elementos, size); // imprimimos o array em ordem crescente
+
+  free(elementos); // liberação de memoria
+   sleep(3);
+   clock_t end = clock();
+   time_spent += (double)(end - begin) / CLOCKS_PER_SEC;
+    printf("O tempo do programa é %fs", time_spent);
+  return 0; }
