@@ -1,1 +1,26 @@
+#include <stdio.h>
+#include <math.h>
 
+void triangulo(float base,float altura){
+ printf("%2.0f",(base*altura)/2);
+  }
+void retangulo(float base,float altura){
+ printf("%2.0f",base*altura);
+  }
+int main(){ 
+ float base,altura;
+ int opcao;
+ // Entrada de Dados
+ printf("\n Informe a base do objeto: ");
+ scanf("%f",&base);
+ printf("\n Informe a altura do objeto: ");
+ scanf("%f",&altura);
+
+void (*p_resultado[]) (float,float) = {triangulo,retangulo};
+ printf("\n Informe a sua escolha triangulo ou retangulo: ");
+ scanf("%d",&opcao);
+  
+  (*p_resultado[opcao])(base,altura);
+ return 0;
+
+}
