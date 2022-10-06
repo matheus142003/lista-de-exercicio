@@ -6,8 +6,7 @@ void  ordenar_elementos(float * elementos, int size) { // função para o usuár
   for (int i = 0; i < size; i++) {
     printf("Digite o valor do elemento %i°: ", i+1); 
     scanf("%f", &elementos[i]); // pedindo valor para armazenar no array de elementos
-  }
-}
+  } }
 void imprim_elementos(float *elementos, int size){ 
   // função para imprimir os elemento da array float
   printf("\n|");
@@ -16,9 +15,7 @@ void imprim_elementos(float *elementos, int size){
       printf("%.2f|", elementos[i]);
     }else{
       printf("%.2f|\n", elementos[i]);
-    }
-  }
-}
+    } } }
 int compare_elementos(const void * a, const void *b){ 
 // função para comparar dois elemento e decidir se troca as variaveis de posição
   return (*(int*)a - *(int*)b);
