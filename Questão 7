@@ -2,9 +2,9 @@
  p = mat + 1;
  R:válida, apresenta o acrescimo 1 para o array de uma dimensão,desse modo ele vai começa de mat[1].
  p = mat++;
- R:inválido 
+ R:inválido, pois dentre essa condição ele não acrescenta o mais um devido o erro de sintaxe.
  p = ++mat;
- R:inválido
+ R:inválido, mesma ideia acontece nesse exemplo não vai poder adicionar.
  x = (*mat)++;
  R:A expressão responde devido ter o endereço da primeira posição do vetor mat[], ou seja, mat[0], e incrementando o valor guardado nessa posição
  
