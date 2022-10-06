@@ -1,1 +1,16 @@
+#include<stdio.h>
+#include <stdlib.h>
+
+int valores[] = { 33,20,10,22,54,6};
+ int compare(const void *a,const void *b){
+   return (*(int*)a-*(int*)b);
+ }
+int main(){
+int n;
+  printf("valores ordenados:\n\n");
+  qsort (valores,6,sizeof(int),compare);
+  for(n=0;n<6;n++)
+   printf("%d,",valores[n]);
+  
+}
 
